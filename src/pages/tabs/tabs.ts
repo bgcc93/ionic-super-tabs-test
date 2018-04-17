@@ -13,6 +13,10 @@ export class TabsPage {
   tab2Root = AboutPage;
   tab3Root = ContactPage;
 
+  onTabSelect(event) {
+    console.log(event);
+  }
+
   constructor() {
 
   }

@@ -1,5 +1,11 @@
-<ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>
-</ion-tabs>
+<super-tabs 
+  toolbarColor="dark" 
+  indicatorColor="dark" 
+  scrollTabs="true" 
+  toolbarBackground="dark"
+  (tabSelect)="onTabSelect($event)"
+>
+  <super-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></super-tab>
+  <super-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></super-tab>
+  <super-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></super-tab>
+</super-tabs>

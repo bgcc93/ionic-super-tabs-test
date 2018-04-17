@@ -1,1 +1,17 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-split-pane>
+    <ion-menu side="left" #menuLeft [content]="content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Left</ion-title>
+            </ion-toolbar>
+        </ion-header>
+    </ion-menu>
+    <ion-menu side="right" #menuRight [content]="content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Right</ion-title>
+            </ion-toolbar>
+        </ion-header>
+    </ion-menu>
+    <ion-nav main #content [root]="rootPage"></ion-nav>
+</ion-split-pane>

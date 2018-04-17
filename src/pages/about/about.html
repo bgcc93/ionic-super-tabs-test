@@ -1,11 +1,21 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
+    <ion-buttons right>
+      <button ion-button (click)="toggleRightMenu()">
+        <ion-icon name="ios-menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title middle>
       About
     </ion-title>
+    <ion-buttons left>
+      <button ion-button (click)="toggleLeftMenu()">
+        <ion-icon name="ios-menu"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-
+  hi
 </ion-content>
