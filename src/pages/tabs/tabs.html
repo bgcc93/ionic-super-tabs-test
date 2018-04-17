@@ -1,11 +1,12 @@
 <super-tabs 
-  toolbarColor="dark" 
+  toolbarColor="clear" 
   indicatorColor="dark" 
   scrollTabs="true" 
   toolbarBackground="dark"
+  scrollTabs="true" 
   (tabSelect)="onTabSelect($event)"
 >
-  <super-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></super-tab>
-  <super-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></super-tab>
-  <super-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></super-tab>
+  <super-tab [root]="tab1Root" title="Home" icon="home"></super-tab>
+  <super-tab [root]="tab2Root" title="About" icon="information-circle"></super-tab>
+  <super-tab [root]="tab3Root" title="Contact" icon="contacts"></super-tab>
 </super-tabs>
